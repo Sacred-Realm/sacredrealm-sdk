@@ -1,0 +1,30 @@
+{
+  "name": "sacredrealm-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sacred-Realm/sacredrealm-sdk.git"
+  },
+  "author": "SEALEM-LAB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sacred-Realm/sacredrealm-sdk/issues"
+  },
+  "homepage": "https://github.com/Sacred-Realm/sacredrealm-sdk#readme",
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@walletconnect/web3-provider": "^1.7.5",
+    "ethers": "^5.6.1",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  }
+}
