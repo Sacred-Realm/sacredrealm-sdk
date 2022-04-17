@@ -2,11 +2,17 @@ export function token(env?: string) {
   const environment = env || process.env.NODE_ENV;
   if (environment === 'production') {
     return {
+      SB: '0x',
+      SN: '0x',
+      ST: '0x',
       SR: '0x',
       BUSD: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
     }
   } else {
     return {
+      SB: '0x',
+      SN: '0x',
+      ST: '0x',
       SR: '0x',
       BUSD: '0x6Cbb3Ef5A8c9743a1e2148d6DCA69f3ba26BC8C5',
     };
