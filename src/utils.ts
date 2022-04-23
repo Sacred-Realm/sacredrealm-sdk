@@ -101,3 +101,23 @@ export function getSigner() {
 export function getRandomNumber(snId: number, slot: string, base: number, range: number) {
   return BigNumber.from(utils.solidityKeccak256(['uint256', 'string'], [snId, slot])).mod(range).add(base).toNumber();
 }
+
+export function getSourceUrl(attr: number[]) {
+  const cdn = '//cdn.sealemlab.io/nft';
+
+  const starArr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11'];
+  const snClassArr = ['Gl', 'As', 'Wi', 'Fi'];
+  const placeArr = ['Wp', 'Hair', 'Upper', 'Arm', 'Leg', 'Belt', 'Neck', 'Ring'];
+  const suitArr = ['01', '02', '03', '04'];
+
+  const star = starArr[attr[0] - 1];
+  const snClass = snClassArr[attr[2] - 1];
+  const place = placeArr[attr[3] - 1];
+  const suit = suitArr[attr[4] - 1];
+
+  if (attr[3] >= 6) {
+    return `${cdn}/${snClass}/TEX_ACC_${snClass}_A_${place}_${suit}`;
+  } else {
+    return `${cdn}/${snClass}/TEX_PC_${snClass}_Set${star}_${place}_Icon_${suit}`;
+  }
+}
