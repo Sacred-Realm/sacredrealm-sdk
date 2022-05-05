@@ -4,6 +4,7 @@ import { token, network } from './constant';
 
 export const util = utils;
 export const constant = constants;
+export const bn = BigNumber;
 
 export const rpcProvider = new ethers.providers.JsonRpcProvider(network().rpcUrls[0]);
 let web3Provider = newWeb3Provider(localStorage.getItem('walletType'));
@@ -103,7 +104,7 @@ export function getRandomNumber(snId: number, slot: string, base: number, range:
 }
 
 export function getSourceUrl(attr: number[]) {
-  const cdn = '//cdn.sealemlab.io/nft';
+  const cdn = '//cdn.sealemlab.com/nft';
 
   const starArr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11'];
   const snClassArr = ['Gl', 'As', 'Wi', 'Fi'];
