@@ -11,8 +11,8 @@ export function token(env?: string) {
     }
   } else {
     return {
-      SB: '0x',
-      SN: '0x',
+      SB: '0xa844b28aBf7aF74438131A1aF642Ef0CCAa8C166',
+      SN: '0xb2761cd8EFD9f436Efa1b205dEB1dC957300Ede5',
       ST: '0x',
       SR: '0x',
       BUSD: '0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7',
