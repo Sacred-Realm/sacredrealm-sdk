@@ -26,17 +26,19 @@ export function contract(env?: string) {
   if (environment === 'production') {
     return {
       Inviting: '0x',
-      STStaking: '0x',
       BondDepository: '0x',
+      STStaking: '0x',
       SRDeposit: '0x',
+      SRWithdraw: '0x',
       PancakeRouter: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
     };
   } else {
     return {
       Inviting: '0x',
-      STStaking: '0x',
       BondDepository: '0x',
+      STStaking: '0x',
       SRDeposit: '0x2e8d3785b157104Fa0cF8436499367A64bE0caf1',
+      SRWithdraw: '0x2Bb766e8b9C14Ea8C8aD182D5861cc8D809B77c6',
       PancakeRouter: '0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3',
     };
   }
