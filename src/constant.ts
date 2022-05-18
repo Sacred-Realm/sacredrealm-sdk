@@ -4,7 +4,7 @@ export function token(env?: string) {
     return {
       SB: '0x',
       SN: '0x',
-      ST: '0x5Ffcf5bf7F5aC61242ef8203C16F25E10D6330E0',
+      ST: '0x6F706319C46D1b28508E8e4bCaA59e47D15e028C',
       SR: '0x',
       BUSD: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
       WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -26,8 +26,8 @@ export function contract(env?: string) {
   if (environment === 'production') {
     return {
       Inviting: '0x',
-      BondDepository: '0x',
       STStaking: '0x',
+      BondDepository: '0x',
       Market: '0x',
       SRDeposit: '0x',
       SRWithdraw: '0x',
@@ -35,9 +35,9 @@ export function contract(env?: string) {
     };
   } else {
     return {
-      Inviting: '0x',
-      BondDepository: '0x',
-      STStaking: '0x',
+      Inviting: '0x1e875755d65fddC53d0995ADD06b257e736cD3B0',
+      STStaking: '0x2bd2c749BD7326d1af9a45Dd4C56d64A35eA8d1D',
+      BondDepository: '0x00f8389bfB557cDb4D0CA17aED080ea3109099b5',
       Market: '0x',
       SRDeposit: '0x2e8d3785b157104Fa0cF8436499367A64bE0caf1',
       SRWithdraw: '0x2Bb766e8b9C14Ea8C8aD182D5861cc8D809B77c6',
