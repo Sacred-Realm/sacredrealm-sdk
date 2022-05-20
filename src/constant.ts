@@ -35,10 +35,10 @@ export function contract(env?: string) {
     };
   } else {
     return {
-      Inviting: '0x1e875755d65fddC53d0995ADD06b257e736cD3B0',
+      Inviting: '0x539C9BdF64037d9625119C35b96d529277490964',
       STStaking: '0x2bd2c749BD7326d1af9a45Dd4C56d64A35eA8d1D',
-      BondDepository: '0x00f8389bfB557cDb4D0CA17aED080ea3109099b5',
-      Market: '0x',
+      BondDepository: '0x674aB4e2A6f8f7FD16593AF1a6ab06Ea0B71f1Cd',
+      Market: '0xFE9fe36B0BB342dbc25ab26E27ABFd56Fb5d49CE',
       SRDeposit: '0x2e8d3785b157104Fa0cF8436499367A64bE0caf1',
       SRWithdraw: '0x2Bb766e8b9C14Ea8C8aD182D5861cc8D809B77c6',
       PancakeRouter: '0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3',
