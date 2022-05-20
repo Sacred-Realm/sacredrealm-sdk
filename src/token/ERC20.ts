@@ -1,4 +1,4 @@
-import { ERC20__factory } from 'sacredrealm-core/typechain-types'
+import { ERC20__factory } from 'sealemlab-core/typechain-types'
 import { rpcProvider } from '../utils';
 
 export function erc20(tokenAddr: string) {

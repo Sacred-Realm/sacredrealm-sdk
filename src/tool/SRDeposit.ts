@@ -1,4 +1,4 @@
-import { SRDeposit__factory } from 'sacredrealm-core/typechain-types'
+import { SRDeposit__factory } from 'sealemlab-core/typechain-types'
 import { rpcProvider } from '../utils';
 import { contract } from '../constant';
 

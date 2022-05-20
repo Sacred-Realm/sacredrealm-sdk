@@ -1,4 +1,4 @@
-import { STStaking__factory } from 'sacredrealm-core/typechain-types'
+import { STStaking__factory } from 'sealemlab-core/typechain-types'
 import { rpcProvider } from '../utils';
 import { contract } from '../constant';
 

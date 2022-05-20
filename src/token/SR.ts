@@ -1,4 +1,4 @@
-import { SR__factory } from 'sacredrealm-core/typechain-types'
+import { SR__factory } from 'sealemlab-core/typechain-types'
 import { rpcProvider } from '../utils';
 import { token } from '../constant';
 

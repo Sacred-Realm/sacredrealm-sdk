@@ -1,4 +1,4 @@
-import { BondDepository__factory } from 'sacredrealm-core/typechain-types'
+import { BondDepository__factory } from 'sealemlab-core/typechain-types'
 import { rpcProvider } from '../utils';
 import { contract } from '../constant';
 
