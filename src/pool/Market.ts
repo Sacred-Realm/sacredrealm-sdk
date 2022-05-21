@@ -47,6 +47,7 @@ export const marketInfo = {
           buyTime
           stars
           rarity
+          power
           role
           part
           suit
@@ -105,6 +106,7 @@ export const marketInfo = {
           sellTime
           stars
           rarity
+          power
           role
           part
           suit
