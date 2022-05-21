@@ -42,8 +42,8 @@ export const marketInfo = {
           token
           price
           fee
-          sellAmount
           feeAmount
+          sellAmount
           buyTime
           stars
           rarity
