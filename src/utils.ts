@@ -27,6 +27,10 @@ function newWeb3Provider(walletType: string | null) {
 }
 
 export const wallet = {
+  getCurrentAccount: async () => {
+    return await web3Provider.request({ method: 'eth_accounts' });
+  },
+
   getAccount: async (walletType: string | null) => {
     web3Provider = newWeb3Provider(walletType);
     localStorage.setItem('walletType', walletType ? walletType : 'metamask')
