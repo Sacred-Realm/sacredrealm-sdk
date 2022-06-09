@@ -22,6 +22,8 @@ export const marketInfo = {
     seller?: string,
     nft?: string,
     token?: string,
+    price_gte?: number,
+    price_lte?: number,
     stars?: number,
     rarity?: number,
     role?: number,
@@ -30,10 +32,10 @@ export const marketInfo = {
     boxType?: number,
   ) => {
     const buyInfosQuery = `
-      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $buyer: String, $seller: String, $nft: String, $token: String, $stars: BigInt, $rarity: BigInt, $role: BigInt, $part: BigInt, $suit: BigInt, $boxType: BigInt) {
+      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $buyer: String, $seller: String, $nft: String, $token: String, $price_gte: BigInt, $price_lte: BigInt, $stars: BigInt, $rarity: BigInt, $role: BigInt, $part: BigInt, $suit: BigInt, $boxType: BigInt) {
         buyInfos(
           first: $first, skip: $skip, orderBy: $orderBy, orderDirection: $orderDirection,
-          where: {${buyer ? `buyer: $buyer,` : ``} ${seller ? `seller: $seller,` : ``} ${nft ? `nft: $nft,` : ``} ${token ? `token: $token,` : ``} ${stars ? `stars: $stars,` : ``} ${rarity ? `rarity: $rarity,` : ``} ${role ? `role: $role,` : ``} ${part ? `part: $part,` : ``} ${suit ? `suit: $suit,` : ``} ${boxType ? `boxType: $boxType,` : ``}}
+          where: {${buyer ? `buyer: $buyer,` : ``} ${seller ? `seller: $seller,` : ``} ${nft ? `nft: $nft,` : ``} ${token ? `token: $token,` : ``} ${price_gte ? `price_gte: $price_gte,` : ``} ${price_lte ? `price_lte: $price_lte,` : ``} ${stars ? `stars: $stars,` : ``} ${rarity ? `rarity: $rarity,` : ``} ${role ? `role: $role,` : ``} ${part ? `part: $part,` : ``} ${suit ? `suit: $suit,` : ``} ${boxType ? `boxType: $boxType,` : ``}}
         ) {
           buyer
           seller
@@ -67,6 +69,8 @@ export const marketInfo = {
         seller: seller,
         nft: nft,
         token: token,
+        price_gte: price_gte,
+        price_lte: price_lte,
         stars: stars,
         rarity: rarity,
         role: role,
@@ -85,6 +89,8 @@ export const marketInfo = {
     seller?: string,
     nft?: string,
     token?: string,
+    price_gte?: number,
+    price_lte?: number,
     stars?: number,
     rarity?: number,
     role?: number,
@@ -93,10 +99,10 @@ export const marketInfo = {
     boxType?: number,
   ) => {
     const sellInfosQuery = `
-      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $seller: String, $nft: String, $token: String, $stars: BigInt, $rarity: BigInt, $role: BigInt, $part: BigInt, $suit: BigInt, $boxType: BigInt) {
+      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $seller: String, $nft: String, $token: String, $price_gte: BigInt, $price_lte: BigInt, $stars: BigInt, $rarity: BigInt, $role: BigInt, $part: BigInt, $suit: BigInt, $boxType: BigInt) {
         sellInfos(
           first: $first, skip: $skip, orderBy: $orderBy, orderDirection: $orderDirection,
-          where: {${seller ? `seller: $seller,` : ``} ${nft ? `nft: $nft,` : ``} ${token ? `token: $token,` : ``} ${stars ? `stars: $stars,` : ``} ${rarity ? `rarity: $rarity,` : ``} ${role ? `role: $role,` : ``} ${part ? `part: $part,` : ``} ${suit ? `suit: $suit,` : ``} ${boxType ? `boxType: $boxType,` : ``}}
+          where: {${seller ? `seller: $seller,` : ``} ${nft ? `nft: $nft,` : ``} ${token ? `token: $token,` : ``} ${price_gte ? `price_gte: $price_gte,` : ``} ${price_lte ? `price_lte: $price_lte,` : ``} ${stars ? `stars: $stars,` : ``} ${rarity ? `rarity: $rarity,` : ``} ${role ? `role: $role,` : ``} ${part ? `part: $part,` : ``} ${suit ? `suit: $suit,` : ``} ${boxType ? `boxType: $boxType,` : ``}}
         ) {
           seller
           nft
@@ -125,6 +131,8 @@ export const marketInfo = {
         seller: seller,
         nft: nft,
         token: token,
+        price_gte: price_gte,
+        price_lte: price_lte,
         stars: stars,
         rarity: rarity,
         role: role,
