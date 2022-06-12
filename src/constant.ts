@@ -30,6 +30,7 @@ export function contract(env?: string) {
   if (environment === 'production') {
     return {
       Inviting: '0x',
+      IDO: '0x',
       STStaking: '0x',
       BondDepository: '0x',
       Market: '0x',
@@ -40,6 +41,7 @@ export function contract(env?: string) {
   } else {
     return {
       Inviting: '0x539C9BdF64037d9625119C35b96d529277490964',
+      IDO: '0x',
       STStaking: '0xa48817A06Af772E95A3796CC7d3C3DAeDF405D9E',
       BondDepository: '0xAD02176148DC132Bd05BbE64653FFC858Bf54D33',
       Market: '0xFE9fe36B0BB342dbc25ab26E27ABFd56Fb5d49CE',
