@@ -2,8 +2,8 @@ export function token(env?: string) {
   const environment = env || process.env.NODE_ENV;
   if (environment === 'production') {
     return {
-      SB: '0x61F0385599cF1C7E4703CCAc94339ebD8e137D50',
-      SN: '0xB986D71f8B800E66B55c7ba75f1b2694BF2B4F77',
+      SB: '0x89c2BB57f63E8D7E1dA5dC1B9858E9C0b7cfF4D5',
+      SN: '0xbd9e51D9C96d916B487bc7a855E6EA8c5E354bBE',
       ST: '0x6F706319C46D1b28508E8e4bCaA59e47D15e028C',
       SR: '0x',
       STLP: '0x',
@@ -33,7 +33,7 @@ export function contract(env?: string) {
       IDO: '0x',
       STStaking: '0x',
       BondDepository: '0x',
-      Market: '0x19aDDA3891E0ecED26EE276a1805765f84314410',
+      Market: '0xF342F3b74f5F5F23664EB4FF08a1691d4a0A2F29',
       SRDeposit: '0x',
       SRWithdraw: '0x',
       PancakeRouter: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
