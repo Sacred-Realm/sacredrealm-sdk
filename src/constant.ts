@@ -33,7 +33,7 @@ export function contract(env?: string) {
       IDO: '0x',
       STStaking: '0x',
       BondDepository: '0x',
-      Market: 'x19aDDA3891E0ecED26EE276a1805765f84314410',
+      Market: '0x19aDDA3891E0ecED26EE276a1805765f84314410',
       SRDeposit: '0x',
       SRWithdraw: '0x',
       PancakeRouter: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
