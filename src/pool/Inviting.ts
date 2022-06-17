@@ -6,7 +6,7 @@ import { contract } from '../constant';
 const client = new ApolloClient({
   uri: 'https://api.thegraph.com/subgraphs/name/sealemlab/inviting',
   cache: new InMemoryCache(),
-})
+});
 
 export function inviting() {
   return Inviting__factory.connect(contract().Inviting, rpcProvider);
