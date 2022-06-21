@@ -30,7 +30,7 @@ export function contract(env?: string) {
   if (environment === 'production') {
     return {
       Inviting: '0x669b1B48f2a71d8F40196A09E9cEC6e916A7BC0c',
-      IDO: '0x',
+      IDO: '0x93B03C09126E4d61044474b96fEEC547CA56F62d',
       STStaking: '0x',
       BondDepository: '0x',
       Market: '0xF342F3b74f5F5F23664EB4FF08a1691d4a0A2F29',
