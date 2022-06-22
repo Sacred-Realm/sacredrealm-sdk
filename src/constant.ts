@@ -29,6 +29,9 @@ export function contract(env?: string) {
   const environment = env || process.env.NODE_ENV;
   if (environment === 'production') {
     return {
+      STSeedPool: '0x',
+      STPrivatePool: '0x',
+      STTeamPool: '0x',
       Inviting: '0x058A11b288b4bDD5De2FEa5f338B27671bFd2582',
       IDO: '0x93B03C09126E4d61044474b96fEEC547CA56F62d',
       STStaking: '0x',
@@ -40,6 +43,9 @@ export function contract(env?: string) {
     };
   } else {
     return {
+      STSeedPool: '0x7dabCf84e51aE65b1757Fe8303c0e320cA8C873f',
+      STPrivatePool: '0xD3aD233B151C6De09Fda3c153dCC91CB0c7bC2ea',
+      STTeamPool: '0xe512880e42cb760C786b09A98138110F3f9bfEBA',
       Inviting: '0x539C9BdF64037d9625119C35b96d529277490964',
       IDO: '0x143757659F711303ECe7A41478f9913762Fa65a1',
       STStaking: '0xfD701D5078905807658593329eBBe040b7Df8d03',
