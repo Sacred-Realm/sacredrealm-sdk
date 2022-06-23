@@ -27,4 +27,10 @@ export const stStakingInfo = {
 
     return srValuePerYear * userSharedST;
   },
+
+  getSRValuePerYear: async (srPrice: number) => {
+    const srPerYear = Number(await stStaking().srPerBlock()) * 28800 * 365 / 1e18;
+
+    return srPerYear * srPrice;
+  },
 }
