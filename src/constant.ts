@@ -29,9 +29,9 @@ export function contract(env?: string) {
   const environment = env || process.env.NODE_ENV;
   if (environment === 'production') {
     return {
-      STSeedPool: '0x',
-      STPrivatePool: '0x',
-      STTeamPool: '0x',
+      STSeedPool: '0xf2F0D04E4ecF1E0ef3c3C95B9Ad7376218a185eF',
+      STPrivatePool: '0x6Da48f41319fd8023e7886F55AB15DaE927F49b4',
+      STTeamPool: '0xB830656B5A9de339086e175E3C570C0Dd7A6Ed30',
       Inviting: '0x058A11b288b4bDD5De2FEa5f338B27671bFd2582',
       IDO: '0x93B03C09126E4d61044474b96fEEC547CA56F62d',
       STStaking: '0x',
