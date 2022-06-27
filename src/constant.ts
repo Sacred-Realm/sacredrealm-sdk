@@ -5,7 +5,7 @@ export function token(env?: string) {
       SB: '0xA8De106949D494E2b346E4496695Abe71C4b02eC',
       SN: '0xcE4c314f5baeDea571c60CF1D09eCf4304FeCF6A',
       ST: '0x6F706319C46D1b28508E8e4bCaA59e47D15e028C',
-      SR: '0x',
+      SR: '0x02894e51c34210396c23A36102a95EE3EC63356D',
       STLP: '0x',
       SRLP: '0x',
       BUSD: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
@@ -37,8 +37,8 @@ export function contract(env?: string) {
       STStaking: '0x593064550a2d0e0F76c0602612De59352A9A5664',
       BondDepository: '0x09627963fEB32DDe5c122A47726f80Ad067F019F',
       Market: '0x508980d9B39656D07D23f9d5e93DDd5dc77dCB52',
-      SRDeposit: '0x',
-      SRWithdraw: '0x',
+      SRDeposit: '0xe6F495D026Add0B7bB9ac013d68f93307164f542',
+      SRWithdraw: '0x50f1664C6045a6e97037145e32695b87E23b9F47',
       PancakeRouter: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
     };
   } else {
