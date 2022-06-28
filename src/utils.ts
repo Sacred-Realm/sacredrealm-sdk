@@ -48,6 +48,21 @@ export const wallet = {
     });
   },
 
+  addBUSD: async (img: string) => {
+    return await web3Provider.request({
+      method: 'wallet_watchAsset',
+      params: {
+        type: 'ERC20',
+        options: {
+          address: token().BUSD,
+          symbol: 'BUSD',
+          decimals: 18,
+          image: img,
+        },
+      },
+    });
+  },
+
   addST: async (img: string) => {
     return await web3Provider.request({
       method: 'wallet_watchAsset',
